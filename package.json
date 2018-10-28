@@ -1,0 +1,29 @@
+{
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "FriendFinder app",
+  "main": "server.js",
+  "scripts": {
+    "test": "test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TomStone76/friendfinder.git"
+  },
+  "keywords": [
+    "express",
+    "friend",
+    "finder"
+  ],
+  "author": "Tom Stone",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TomStone76/friendfinder/issues"
+  },
+  "homepage": "https://github.com/TomStone76/friendfinder#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "path": "^0.12.7"
+  }
+}
