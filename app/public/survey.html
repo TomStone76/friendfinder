@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>FriendFinder - Home </title>
+    <title>FriendFinder - Survey </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
@@ -17,159 +17,200 @@
 
 <body>
 
-    <div class="dropdown">
-        <div class="alert alert-light" role="alert">1. You consider yourself more of an extrovert than an introvert.</div>
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownOne" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Select an option
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownOne">
-            <a class="dropdown-item" href="#">1 (Strongly agree)</a>
-            <a class="dropdown-item" href="#">2</a>
-            <a class="dropdown-item" href="#">3</a>
-            <a class="dropdown-item" href="#">4</a>
-            <a class="dropdown-item" href="#">5 (Strongly disagree)</a>
-        </div>
-    </div>
+    <div class="container">
 
-    <div class="dropdown">
-        <div class="alert alert-light" role="alert">2. Overall, you are more of a “right-brained” than a “left-brained”
-            person.</div>
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownTwo" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Select an option
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownTwo">
-            <a class="dropdown-item" href="#">1 (Strongly agree)</a>
-            <a class="dropdown-item" href="#">2</a>
-            <a class="dropdown-item" href="#">3</a>
-            <a class="dropdown-item" href="#">4</a>
-            <a class="dropdown-item" href="#">5 (Strongly disagree)</a>
-        </div>
-    </div>
+        <nav class="navbar navbar-light bg-light">
+            <span class="navbar-brand mb-0 h1">Survey Questions</span>
+        </nav>
 
-    <div class="dropdown">
-        <div class="alert alert-light" role="alert">3. Generally speaking, you are spontaneous and/or adventurous.</div>
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownThree" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Select an option
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownThree">
-                <a class="dropdown-item" href="#">1 (Strongly agree)</a>
-                <a class="dropdown-item" href="#">2</a>
-                <a class="dropdown-item" href="#">3</a>
-                <a class="dropdown-item" href="#">4</a>
-                <a class="dropdown-item" href="#">5 (Strongly disagree)</a>
-        </div>
-    </div>
+        <br><br>
 
-    <div class="dropdown">
-        <div class="alert alert-light" role="alert">4. When it comes to pets, you are more of a “dog person” than a
-            “cat person.”</div>
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownFour" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Select an option
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownFour">
-                <a class="dropdown-item" href="#">1 (Strongly agree)</a>
-                <a class="dropdown-item" href="#">2</a>
-                <a class="dropdown-item" href="#">3</a>
-                <a class="dropdown-item" href="#">4</a>
-                <a class="dropdown-item" href="#">5 (Strongly disagree)</a>
-        </div>
-    </div>
+        <div class="about-you">
 
-    <div class="dropdown">
-        <div class="alert alert-light" role="alert">5. When eating, you prefer spicier food to blander food.</div>
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownFive" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Select an option
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownFive">
-                <a class="dropdown-item" href="#">1 (Strongly agree)</a>
-                <a class="dropdown-item" href="#">2</a>
-                <a class="dropdown-item" href="#">3</a>
-                <a class="dropdown-item" href="#">4</a>
-                <a class="dropdown-item" href="#">5 (Strongly disagree)</a>
-        </div>
-    </div>
+            <form>
+                <div class="form-group">
+                    <div class="alert alert-light" role="alert">About You</div>
+                    <label for="exampleInputEmail1">Name (Required)</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Link to Photo Image (Required)</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+            </form>
 
-    <div class="dropdown">
-        <div class="alert alert-light" role="alert">6. You like going out on the town (to restaurants, bars, etc.)</div>
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownSix" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Select an option
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownSix">
-                <a class="dropdown-item" href="#">1 (Strongly agree)</a>
-                <a class="dropdown-item" href="#">2</a>
-                <a class="dropdown-item" href="#">3</a>
-                <a class="dropdown-item" href="#">4</a>
-                <a class="dropdown-item" href="#">5 (Strongly disagree)</a>
         </div>
-    </div>
 
-    <div class="dropdown">
-        <div class="alert alert-light" role="alert">7. You enjoy learning for the sake of learning.</div>
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownSeven" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Select an option
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownSeven">
-                <a class="dropdown-item" href="#">1 (Strongly agree)</a>
-                <a class="dropdown-item" href="#">2</a>
-                <a class="dropdown-item" href="#">3</a>
-                <a class="dropdown-item" href="#">4</a>
-                <a class="dropdown-item" href="#">5 (Strongly disagree)</a>
-        </div>
-    </div>
+        <br>
 
-    <div class="dropdown">
-        <div class="alert alert-light" role="alert">8. You usually say exactly what is on your mind. </div>
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownEight" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Select an option
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownEight">
-                <a class="dropdown-item" href="#">1 (Strongly agree)</a>
-                <a class="dropdown-item" href="#">2</a>
-                <a class="dropdown-item" href="#">3</a>
-                <a class="dropdown-item" href="#">4</a>
-                <a class="dropdown-item" href="#">5 (Strongly disagree)</a>
-        </div>
-    </div>
+        <div class="dropdown-items">
 
-    <div class="dropdown">
-        <div class="alert alert-light" role="alert">9. Typically, you have an “edgy” rather than a “conventional” sense
-            of humor.</div>
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownNine" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Select an option
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownNine">
-                <a class="dropdown-item" href="#">1 (Strongly agree)</a>
-                <a class="dropdown-item" href="#">2</a>
-                <a class="dropdown-item" href="#">3</a>
-                <a class="dropdown-item" href="#">4</a>
-                <a class="dropdown-item" href="#">5 (Strongly disagree)</a>
-        </div>
-    </div>
+            <div class="dropdown">
+                <div class="alert alert-light" role="alert">1. You consider yourself more of an extrovert than an
+                    introvert.</div>
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownOne" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Select an option
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownOne">
+                    <a class="dropdown-item" href="#">1 (Strongly agree)</a>
+                    <a class="dropdown-item" href="#">2</a>
+                    <a class="dropdown-item" href="#">3</a>
+                    <a class="dropdown-item" href="#">4</a>
+                    <a class="dropdown-item" href="#">5 (Strongly disagree)</a>
+                </div>
+            </div>
 
-    <div class="dropdown">
-        <div class="alert alert-light" role="alert">10. When it comes to politics, are you more on the left or the
-            right? (Choose 1 for left and 5 for right).
+            <div class="dropdown">
+                <div class="alert alert-light" role="alert">2. Overall, you are more of a “right-brained” than a
+                    “left-brained”
+                    person.</div>
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownTwo" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Select an option
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownTwo">
+                    <a class="dropdown-item" href="#">1 (Strongly agree)</a>
+                    <a class="dropdown-item" href="#">2</a>
+                    <a class="dropdown-item" href="#">3</a>
+                    <a class="dropdown-item" href="#">4</a>
+                    <a class="dropdown-item" href="#">5 (Strongly disagree)</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <div class="alert alert-light" role="alert">3. Generally speaking, you are spontaneous and/or
+                    adventurous.</div>
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownThree" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Select an option
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownThree">
+                    <a class="dropdown-item" href="#">1 (Strongly agree)</a>
+                    <a class="dropdown-item" href="#">2</a>
+                    <a class="dropdown-item" href="#">3</a>
+                    <a class="dropdown-item" href="#">4</a>
+                    <a class="dropdown-item" href="#">5 (Strongly disagree)</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <div class="alert alert-light" role="alert">4. When it comes to pets, you are more of a “dog person”
+                    than a
+                    “cat person.”</div>
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownFour" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Select an option
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownFour">
+                    <a class="dropdown-item" href="#">1 (Strongly agree)</a>
+                    <a class="dropdown-item" href="#">2</a>
+                    <a class="dropdown-item" href="#">3</a>
+                    <a class="dropdown-item" href="#">4</a>
+                    <a class="dropdown-item" href="#">5 (Strongly disagree)</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <div class="alert alert-light" role="alert">5. When eating, you prefer spicier food to blander food.</div>
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownFive" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Select an option
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownFive">
+                    <a class="dropdown-item" href="#">1 (Strongly agree)</a>
+                    <a class="dropdown-item" href="#">2</a>
+                    <a class="dropdown-item" href="#">3</a>
+                    <a class="dropdown-item" href="#">4</a>
+                    <a class="dropdown-item" href="#">5 (Strongly disagree)</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <div class="alert alert-light" role="alert">6. You like going out on the town (to restaurants, bars,
+                    etc.)</div>
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownSix" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Select an option
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownSix">
+                    <a class="dropdown-item" href="#">1 (Strongly agree)</a>
+                    <a class="dropdown-item" href="#">2</a>
+                    <a class="dropdown-item" href="#">3</a>
+                    <a class="dropdown-item" href="#">4</a>
+                    <a class="dropdown-item" href="#">5 (Strongly disagree)</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <div class="alert alert-light" role="alert">7. You enjoy learning for the sake of learning.</div>
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownSeven" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Select an option
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownSeven">
+                    <a class="dropdown-item" href="#">1 (Strongly agree)</a>
+                    <a class="dropdown-item" href="#">2</a>
+                    <a class="dropdown-item" href="#">3</a>
+                    <a class="dropdown-item" href="#">4</a>
+                    <a class="dropdown-item" href="#">5 (Strongly disagree)</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <div class="alert alert-light" role="alert">8. You usually say exactly what is on your mind. </div>
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownEight" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Select an option
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownEight">
+                    <a class="dropdown-item" href="#">1 (Strongly agree)</a>
+                    <a class="dropdown-item" href="#">2</a>
+                    <a class="dropdown-item" href="#">3</a>
+                    <a class="dropdown-item" href="#">4</a>
+                    <a class="dropdown-item" href="#">5 (Strongly disagree)</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <div class="alert alert-light" role="alert">9. Typically, you have an “edgy” rather than a
+                    “conventional”
+                    sense
+                    of humor.</div>
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownNine" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Select an option
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownNine">
+                    <a class="dropdown-item" href="#">1 (Strongly agree)</a>
+                    <a class="dropdown-item" href="#">2</a>
+                    <a class="dropdown-item" href="#">3</a>
+                    <a class="dropdown-item" href="#">4</a>
+                    <a class="dropdown-item" href="#">5 (Strongly disagree)</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <div class="alert alert-light" role="alert">10. When it comes to politics, are you more on the left or
+                    the
+                    right? (Choose 1 for left and 5 for right).
+                </div>
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownTen" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Select an option
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownTen">
+                    <a class="dropdown-item" href="#">1</a>
+                    <a class="dropdown-item" href="#">2</a>
+                    <a class="dropdown-item" href="#">3</a>
+                    <a class="dropdown-item" href="#">4</a>
+                    <a class="dropdown-item" href="#">5</a>
+                </div>
+            </div>
+
         </div>
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownTen" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Select an option
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownTen">
-            <a class="dropdown-item" href="#">1</a>
-            <a class="dropdown-item" href="#">2</a>
-            <a class="dropdown-item" href="#">3</a>
-            <a class="dropdown-item" href="#">4</a>
-            <a class="dropdown-item" href="#">5</a>
-        </div>
+
     </div>
 
 </body>
