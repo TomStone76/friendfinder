@@ -54,7 +54,7 @@
                     Select an option
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownOne">
-                    <a class="dropdown-item" href="#">1</a>
+                    <a class="dropdown-item" id="one" href="#">1</a>
                     <a class="dropdown-item" href="#">2</a>
                     <a class="dropdown-item" href="#">3</a>
                     <a class="dropdown-item" href="#">4</a>
@@ -69,7 +69,7 @@
                     aria-haspopup="true" aria-expanded="false">
                     Select an option
                 </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownTwo">
+                <div class="dropdown-menu" id="two" aria-labelledby="dropdownTwo">
                     <a class="dropdown-item" href="#">1</a>
                     <a class="dropdown-item" href="#">2</a>
                     <a class="dropdown-item" href="#">3</a>
@@ -85,7 +85,7 @@
                     aria-haspopup="true" aria-expanded="false">
                     Select an option
                 </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownThree">
+                <div class="dropdown-menu" id="three" aria-labelledby="dropdownThree">
                     <a class="dropdown-item" href="#">1</a>
                     <a class="dropdown-item" href="#">2</a>
                     <a class="dropdown-item" href="#">3</a>
@@ -101,7 +101,7 @@
                     aria-haspopup="true" aria-expanded="false">
                     Select an option
                 </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownFour">
+                <div class="dropdown-menu" id="four" aria-labelledby="dropdownFour">
                     <a class="dropdown-item" href="#">1</a>
                     <a class="dropdown-item" href="#">2</a>
                     <a class="dropdown-item" href="#">3</a>
@@ -117,7 +117,7 @@
                     aria-haspopup="true" aria-expanded="false">
                     Select an option
                 </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownFive">
+                <div class="dropdown-menu" id="five" aria-labelledby="dropdownFive">
                     <a class="dropdown-item" href="#">1</a>
                     <a class="dropdown-item" href="#">2</a>
                     <a class="dropdown-item" href="#">3</a>
@@ -133,7 +133,7 @@
                     aria-haspopup="true" aria-expanded="false">
                     Select an option
                 </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownSix">
+                <div class="dropdown-menu" id="six" aria-labelledby="dropdownSix">
                     <a class="dropdown-item" href="#">1</a>
                     <a class="dropdown-item" href="#">2</a>
                     <a class="dropdown-item" href="#">3</a>
@@ -149,7 +149,7 @@
                     aria-haspopup="true" aria-expanded="false">
                     Select an option
                 </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownSeven">
+                <div class="dropdown-menu" id="seven" aria-labelledby="dropdownSeven">
                     <a class="dropdown-item" href="#">1</a>
                     <a class="dropdown-item" href="#">2</a>
                     <a class="dropdown-item" href="#">3</a>
@@ -165,7 +165,7 @@
                     aria-haspopup="true" aria-expanded="false">
                     Select an option
                 </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownEight">
+                <div class="dropdown-menu" id="eight" aria-labelledby="dropdownEight">
                     <a class="dropdown-item" href="#">1</a>
                     <a class="dropdown-item" href="#">2</a>
                     <a class="dropdown-item" href="#">3</a>
@@ -181,7 +181,7 @@
                     aria-haspopup="true" aria-expanded="false">
                     Select an option
                 </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownNine">
+                <div class="dropdown-menu" id="nine" aria-labelledby="dropdownNine">
                     <a class="dropdown-item" href="#">1</a>
                     <a class="dropdown-item" href="#">2</a>
                     <a class="dropdown-item" href="#">3</a>
@@ -198,7 +198,7 @@
                     aria-haspopup="true" aria-expanded="false">
                     Select an option
                 </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownTen">
+                <div class="dropdown-menu" id="ten" aria-labelledby="dropdownTen">
                     <a class="dropdown-item" href="#">1</a>
                     <a class="dropdown-item" href="#">2</a>
                     <a class="dropdown-item" href="#">3</a>
@@ -209,18 +209,81 @@
 
         </div>
 
+        <br>
+
         <div class="button-box">
 
             <button type="button" class="btn btn-secondary btn-lg btn-block" id="submit-button">Submit responses</button>
 
         </div>
 
+        <br>
+
     </div>
 
     <script>
+        let valOne, valTwo, valThree, valFour, valFive, valSix, valSeven, valEight, valNine, valTen;
 
+         $("#one a").click(function (e) {
+            e.preventDefault();
+            var valOne= parseInt($(this).text());
+            console.log(valOne);
+        })
+
+        $("#two a").click(function (e) {
+            e.preventDefault();
+            var valTwo= parseInt($(this).text());
+            console.log(valTwo);
+        })
+        
+        $("#three a").click(function (e) {
+            e.preventDefault();
+            var valThee = parseInt($(this).text());
+            console.log(valThree);
+        })
+        
+        $("#four a").click(function (e) {
+            e.preventDefault();
+            var valFour = parseInt($(this).text());
+            console.log(valFour);
+        })
+        
+        $("#five a").click(function (e) {
+            e.preventDefault();
+            var valFive = parseInt($(this).text());
+            console.log(valFive);
+        })
+        
+        $("#six a").click(function (e) {
+            e.preventDefault();
+            var valSix = parseInt($(this).text());
+            console.log(valSix);
+        })
+        
+        $("#seven a").click(function (e) {
+            e.preventDefault();
+            var valSeven = parseInt($(this).text());
+            console.log(valSeven);
+        })
+
+        $("#eight a").click(function (e) {
+            e.preventDefault();
+            var valEight = parseInt($(this).text());
+            console.log(valEight);
+        })
+
+        $("#nine a").click(function (e) {
+            e.preventDefault();
+            var valNine = parseInt($(this).text());
+            console.log(valNine);
+        })
+
+        $("#ten a").click(function (e) {
+            e.preventDefault();
+            var valTen = parseInt($(this).text());
+            console.log(valTen);
+        })
     </script>
-
 </body>
 
 </html>
