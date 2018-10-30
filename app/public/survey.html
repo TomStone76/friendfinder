@@ -30,13 +30,12 @@
             <form>
                 <div class="form-group">
                     <div class="alert alert-light" role="alert">About You</div>
-                    <label for="exampleInputEmail1">Name (Required)</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                        placeholder="Enter email">
+                    <label>Name (Required)</label>
+                    <input type="friend-name" class="form-control" id="friendName" placeholder="Name (Required)">
                 </div>
                 <div class="form-group">
                     <label for="exampleInputPassword1">Link to Photo Image (Required)</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    <input type="photo-image" class="form-control" id="photoImage" placeholder="Link to Photo Image (Required)">
                 </div>
             </form>
 
@@ -228,13 +227,13 @@
             e.preventDefault();
             var valOne= parseInt($(this).text());
             console.log(valOne);
-        })
+        });
 
         $("#two a").click(function (e) {
             e.preventDefault();
             var valTwo= parseInt($(this).text());
             console.log(valTwo);
-        })
+        });
         
         $("#three a").click(function (e) {
             e.preventDefault();
@@ -246,43 +245,52 @@
             e.preventDefault();
             var valFour = parseInt($(this).text());
             console.log(valFour);
-        })
+        });
         
         $("#five a").click(function (e) {
             e.preventDefault();
             var valFive = parseInt($(this).text());
             console.log(valFive);
-        })
+        });
         
         $("#six a").click(function (e) {
             e.preventDefault();
             var valSix = parseInt($(this).text());
             console.log(valSix);
-        })
+        });
         
         $("#seven a").click(function (e) {
             e.preventDefault();
             var valSeven = parseInt($(this).text());
             console.log(valSeven);
-        })
+        });
 
         $("#eight a").click(function (e) {
             e.preventDefault();
             var valEight = parseInt($(this).text());
             console.log(valEight);
-        })
+        });
 
         $("#nine a").click(function (e) {
             e.preventDefault();
             var valNine = parseInt($(this).text());
             console.log(valNine);
-        })
+        });
 
         $("#ten a").click(function (e) {
             e.preventDefault();
             var valTen = parseInt($(this).text());
             console.log(valTen);
-        })
+        });
+
+        $("submit-button").on("click", function(event) {
+            event.preventDefault();
+            var newFriend = {
+                name: $("#friendName").val().trim(),
+                photo: $("#photoImage").val().trim(),
+                scores: [valOne, valTwo, valThree, valFour, valFive, valSix, valSeven, valEight, valNine, valTen]
+            }
+        });
     </script>
 </body>
 
