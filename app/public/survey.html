@@ -44,12 +44,13 @@
                 <div class="form-group">
                     <div class="alert alert-light" role="alert">About You</div>
                     <label>Name (Required)</label>
-                    <input type="friend-name" class="form-control" id="friendName" placeholder="Name (Required)">
+                    <input type="text" class="form-control" id="friendName" placeholder="Name here..">
                 </div>
                 <div class="form-group">
                     <label for="exampleInputPassword1">Link to Photo Image (Required)</label>
-                    <input type="photo-image" class="form-control" id="photoImage" placeholder="Link to Photo Image (Required)">
+                    <input type="text" class="form-control" id="photoImage" value="image" placeholder="Link to Photo Image (Required)">
                 </div>
+                <button type="text" class="form-control" id="infoButton" placeholder="Personal photo link here...">Submit</button>
             </form>
 
         </div>
@@ -223,7 +224,7 @@
                     </div>
                 </div>
 
-                <button type="button" class="btn btn-secondary btn-lg btn-block" id="submit-button">Submit button</button>
+                <button type="button" class="btn btn-secondary btn-lg btn-block" id="survey-submit-button">Submit</button>
 
             </div>
 
@@ -327,20 +328,30 @@
                 console.log(responseArr);
             });
 
-            $("#submit-button").click(function (e) {
+            $("#survey-submit-button").click(function (e) {
                 e.preventDefault();
+                console.log(responseArr);
                 var newFriend = {
-                    name: $("friendName").val().trim(),
-                    photo_link: $("photoImage").val().trim(),
+                    name: $("#friendName").val(),
+                    photo_link: $("#photoImage").val(),
                     scores: responseArr
                 }
+
+                console.log("new friend object");
+                console.log(newFriend);
 
                 $.post("/api/friends", newFriend);
 
                 $("#result-modal").modal("show");
             });
 
+            $("#infoButton").click(function (e) {
+                let friendsName = $("#friendName").val();
+                e.preventDefault();
+                console.log(friendsName);
+            });
         });
+
     </script>
 </body>
 
