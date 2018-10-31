@@ -6,6 +6,6 @@ module.exports = function(app) {
         res.json(friendsData);
     });
 
-    $.post("/api/friends", newFriend)
+    // app.post("/api/friends", newFriend)
 
 }
