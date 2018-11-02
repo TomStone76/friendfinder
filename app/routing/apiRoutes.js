@@ -17,19 +17,6 @@ module.exports = function (app) {
         }
     }
 
-    // app.post("/api/friends", function (req, res) {
-    //     console.log("post route working");
-    //     console.log(req.body);
-    //     friendsData.push(req.body);
-    //     console.log(friendsData)
-    //     for (var i = 0; i < friendsData.length; i++) {
-    //         var arrNums = friendsData[i].scores.map(Number);
-    //         console.log(arrNums);
-    //     }
-    //     console.log(friendsData.slice(-1)[0]);
-    //     res.json(friendsData[0]);
-    // });
-
 
     app.post("/api/friends", function (req, res) {
         console.log("post route working");
@@ -41,3 +28,5 @@ module.exports = function (app) {
         }
     });
 }
+
+//Still need to compare user's scores against other data in friendsData array, generate a match, and dis[lay this in a modal
