@@ -17,7 +17,7 @@
     margin-bottom: 20px;
 }
 
-.display-4, .lead {
+.display-4, .lead, #questionsHeader, #about {
     font-family: 'Old Standard TT', serif;
     font-weight: bold;
 }
