@@ -16,3 +16,8 @@
     box-shadow: 5px 2.5px 2.5px gray;
     margin-bottom: 20px;
 }
+
+.display-4, .lead {
+    font-family: 'Old Standard TT', serif;
+    font-weight: bold;
+}
