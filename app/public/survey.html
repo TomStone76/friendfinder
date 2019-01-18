@@ -31,7 +31,7 @@
                 <div class="about-you">
                     <form>
                         <div class="form-group">
-                            <div class="alert alert-light" role="alert" id="about">About You</div>
+                            <div class="alert alert-dark" role="alert" id="about">About You</div>
                             <label>Name (Required)</label>
                             <input type="text" class="form-control" id="friendName" placeholder="Name here..">
                         </div>
@@ -221,72 +221,72 @@
                     let newFriend;
                     let responseArr = [];
 
-                    $("#one a").click(function (e) {
+                    $("#one").change(function (e) {
                         e.preventDefault();
-                        valOne = $(this).text()
+                        valOne = $(this).val()
                         console.log(valOne);
                         responseArr.push(valOne);
                     });
 
-                    $("#two a").click(function (e) {
+                    $("#two").change(function (e) {
                         e.preventDefault();
-                        valTwo = $(this).text()
+                        valTwo = $(this).val()
                         console.log(valTwo);
                         responseArr.push(valTwo);
                     });
 
-                    $("#three a").click(function (e) {
+                    $("#three").change(function (e) {
                         e.preventDefault();
-                        valThree = $(this).text()
+                        valThree = $(this).val()
                         console.log(valThree);
                         responseArr.push(valThree);
                     });
 
-                    $("#four a").click(function (e) {
+                    $("#four").change(function (e) {
                         e.preventDefault();
-                        valFour = $(this).text()
+                        valFour = $(this).val()
                         console.log(valFour);
                         responseArr.push(valFour);
                     });
 
-                    $("#five a").click(function (e) {
+                    $("#five").change(function (e) {
                         e.preventDefault();
-                        valFive = $(this).text()
+                        valFive = $(this).val()
                         console.log(valFive);
                         responseArr.push(valFive);
                     });
 
-                    $("#six a").click(function (e) {
+                    $("#six").change(function (e) {
                         e.preventDefault();
-                        valSix = $(this).text()
+                        valSix = $(this).val()
                         console.log(valSix);
                         responseArr.push(valSix);
                     });
 
-                    $("#seven a").click(function (e) {
+                    $("#seven").change(function (e) {
                         e.preventDefault();
-                        valSeven = $(this).text()
+                        valSeven = $(this).val()
                         console.log(valSeven);
                         responseArr.push(valSeven);
                     });
 
-                    $("#eight a").click(function (e) {
+                    $("#eight").change(function (e) {
                         e.preventDefault();
-                        valEight = $(this).text()
+                        valEight = $(this).val()
                         console.log(valEight);
                         responseArr.push(valEight);
                     });
 
-                    $("#nine a").click(function (e) {
+                    $("#nine").change(function (e) {
                         e.preventDefault();
-                        valNine = $(this).text()
+                        valNine = $(this).val()
                         console.log(valNine);
                         responseArr.push(valNine);
                     });
 
-                    $("#ten a").click(function (e) {
+                    $("#ten").change(function (e) {
                         e.preventDefault();
-                        valTen = $(this).text()
+                        valTen = $(this).val()
                         console.log(valTen);
                         responseArr.push(valTen);
                         console.log(responseArr);
