@@ -1,3 +1,5 @@
+//dummy data for app
+
 var friendsData = [
     {
         name: "John Doe",
