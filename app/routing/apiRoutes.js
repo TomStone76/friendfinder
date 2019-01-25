@@ -29,4 +29,3 @@ module.exports = function (app) {
     });
 }
 
-//Still need to compare user's scores against other data in friendsData array, generate a match, and dis[lay this in a modal
